@@ -1,5 +1,3 @@
-/* style.css */
-
 /* General body styling */
 body {
     background-color: white;
@@ -30,25 +28,24 @@ body {
     color: #333;
   }
   
-  /* Preparation time h3 */
-  /* Style the h3 element with light purple background */
-h3 {
+  /* First h3 (Preparation Time section) styling */
+  h3 {
     background-color: #f3e5f5; /* Light purple */
-    padding: 15px;
+    padding: 20px;
     display: inline-block;
+    text-align: center;
     width: auto;
     margin: 20px auto;
-    text-align: center;
   }
   
-  /* Style the paragraph inside h3 to have brown text */
+  /* p inside h3 */
   h3 p {
     color: brown;
     font-size: 1.1em;
     margin: 0 0 10px 0;
   }
   
-  /* Center the unordered list */
+  /* ul inside h3 */
   h3 ul {
     list-style-position: inside;
     padding: 0;
@@ -57,53 +54,38 @@ h3 {
     display: inline-block;
   }
   
-  /* Make the text before the colon bold */
+  /* li inside h3 ul */
   h3 ul li {
     font-size: 1em;
     margin: 5px 0;
   }
+  
+  /* bold text before colon using span if applicable */
   h3 ul li::before {
     content: "";
     font-weight: bold;
   }
   
-  /* Attempt bolding before colon using span if you can update HTML later */
-  
-  /*h3 {
+  /* h4 (Ingredients) styling */
+  h4 {
     color: brown;
     margin-top: 30px;
-  }*/
-  
-  /* Light purple background for preparation section (h3 + ul) */
-  h3 + ul {
-    background-color: #f3eaff;
-    display: inline-block;
-    text-align: left;
-    padding: 10px 20px;
-    border-radius: 8px;
   }
   
-  /* h4 purple and centered */
-  h4 {
-    color: purple;
-    margin-top: 30px;
-  }
-  
-  /* Ingredients list styling */
+  /* Ingredients list */
   h4 + ul {
     display: inline-block;
     text-align: left;
     margin-bottom: 30px;
   }
   
-  /* h5 brown and centered */
+  /* h5 (Instructions) styling */
   h5 {
     color: brown;
     margin-top: 30px;
   }
   
-  /* Instructions ordered list:
-     Numbers brown, text black, centered */
+  /* Instructions list */
   ol {
     list-style: none;
     counter-reset: step-counter;
@@ -128,32 +110,34 @@ h3 {
     font-weight: bold;
   }
   
-  /* Nutrition table styling */
-  .nutrition-table {
-    margin: 30px auto;
+  /* Second h3 (Nutrition) styling */
+  h3:nth-of-type(2) {
+    color: brown;
+    margin-top: 40px;
+  }
+  
+  /* Nutrition table */
+  table {
+    margin: 20px auto;
     border-collapse: collapse;
     width: 60%;
   }
   
-  .nutrition-table caption {
+  table caption {
     margin-bottom: 10px;
     font-style: italic;
+    color: #555;
   }
   
-  .nutrition-table th,
-  .nutrition-table td {
+  table th,
+  table td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
   }
   
-  .nutrition-table td:last-child {
+  table td:last-child {
     color: brown;
     font-weight: bold;
   }
-  
-  
-  
-  
-   
   
